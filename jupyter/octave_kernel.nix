@@ -1,4 +1,4 @@
-{ lib, buildPythonPackage, fetchPypi, pyzmq, metakernel, jupyter_client
+{ lib, buildPythonPackage, fetchPypi, pyzmq, metakernel, jupyter-client
 , setuptools, hatch-vcs, hatchling }:
 
 buildPythonPackage rec {
@@ -12,7 +12,7 @@ buildPythonPackage rec {
   nativeBuildInputs = [ hatchling hatch-vcs ];
   build-system = [ setuptools ];
 
-  propagatedBuildInputs = [ pyzmq metakernel jupyter_client ];
+  propagatedBuildInputs = [ pyzmq metakernel jupyter-client ];
 
   doCheck = false; # upstream tests require a running Octave
 

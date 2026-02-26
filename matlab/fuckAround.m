@@ -54,7 +54,7 @@ zT(cols) = zred;
 
 % turn the 2x511 vector into 512, for hex conversion:
 bi1  = zT(1:511);          % 511×1 GF column vector
-bi1 = [gf(0,1); bi1];     % 512×1 GF column vector (prepend zero safely)
+bi1 = [gf(0,1); bi1];     % 512×1 GF column vector 
 bi2  = zT(512:1022);       % 511×1 GF column vector
 bi2 = [gf(0,1);bi2];
 
